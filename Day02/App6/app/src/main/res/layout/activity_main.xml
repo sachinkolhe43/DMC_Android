@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/editName"
+       android:hint="Name"
+       android:textSize="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/editCourse"
+        android:hint="Course"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:backgroundTint="#5BE349"
+            android:layout_marginRight="10dp"
+            android:onClick="save"
+            android:id="@+id/btnsave"
+            android:text="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="cancel"
+            android:backgroundTint="#E34958"
+            android:layout_marginLeft="10dp"
+            android:text="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:text="Name :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/textCourse"
+        android:textSize="30dp"
+        android:text="Course :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
